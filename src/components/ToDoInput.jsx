@@ -4,6 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 const ToDoInput = ({setItemStateFunction, onItemChange, setOnItemChange, editItem}) => {
   
   return (
+    
     <div className="card">
       <div className="card-body">
         <div className="input-group mb-3">
@@ -23,7 +24,7 @@ const ToDoInput = ({setItemStateFunction, onItemChange, setOnItemChange, editIte
         </div>
         <button
           type="button"
-          className={editItem? "btn btn-success btn-lg btn-block w-100" : "btn btn-primary btn-lg btn-block w-100"}
+          className={editItem? "btn btn-success btn-lg btn-block btn-gradient w-100" : "btn btn-primary btn-lg btn-block btn-gradient w-100"}
           onClick={()=>{setItemStateFunction(onItemChange)}}
         >
           {editItem? "Edit Item":"Add Item"}

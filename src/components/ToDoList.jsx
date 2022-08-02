@@ -2,7 +2,7 @@ import React from "react";
 
 const ToDoList = ({ items, clearList, editItemBtn, clearItem }) => {
   return (
-    <div className="container d-flex flex-column" style={{gap:'1rem'}}>
+    <div className="d-flex flex-column gap-4">
       {items.map((item, index) => {
         return (
           <div key={index} className="card">
@@ -34,7 +34,7 @@ const ToDoList = ({ items, clearList, editItemBtn, clearItem }) => {
       <button
         onClick={() => clearList()}
         type="button"
-        className="btn btn-danger btn-lg btn-block w-100"
+        className="btn btn-danger btn-lg btn-block btn-gradient"
       >
         Clear List
       </button>
